@@ -5,10 +5,10 @@ interface PropsInterface {
   breadcrumbs?: string[];
 }
 
-export default function Header({
+export const Header=({
   title,
   breadcrumbs = ["Home", "Articles"]
-}: PropsInterface) {
+}: PropsInterface) =>{
   return (
     <section>
       <div >

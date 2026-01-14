@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function BannerSection({
+export const BannerSection = ({
   imageSrc = "/hero.png",
 }: {
   imageSrc?: string;
-}) {
+}) => {
   return (
     <section
       style={{
@@ -16,4 +16,4 @@ export default function BannerSection({
       }}
     />
   );
-}
+};
