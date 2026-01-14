@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import React from "react";
 import data from "../../../data/data.json";
 import { notFound } from "next/navigation";
-import Hero from "@/app/components/Hero";
 import BannerSection from "@/app/components/Banner";
+import Header from "@/app/components/Hero";
 
 
 export async function generateMetadata({
@@ -44,7 +44,7 @@ export default async function BlogPost({
   if (!post) return notFound();
 
   return <div>
-    <Hero title={post?.title} breadcrumbs={["Home", "Articles", post?.title]} />
+    <Header title={post?.title} breadcrumbs={["Home", "Articles", post?.title]} />
     <BannerSection imageSrc={post?.heroImage} />
   </div>;
 }

@@ -5,7 +5,7 @@ interface PropsInterface {
   breadcrumbs?: string[];
 }
 
-export default function Hero({
+export default function Header({
   title,
   breadcrumbs = ["Home", "Articles"]
 }: PropsInterface) {
