@@ -6,7 +6,7 @@
     "author": {
       "name": "Alex Carter",
       "bio": "Certified Personal Trainer and Nutritionist with over 10 years of experience helping clients achieve their fitness goals.",
-      "avatar": "/images/avatar.jpg"
+      "avatar": "/icon/icon1.png"
     },
     "heroImage": "/images/hero.png",
     "body": [
@@ -43,7 +43,7 @@
     "author": {
       "name": "Sarah Mitchell",
       "bio": "Fitness Coach and Wellness Writer focused on sustainable and healthy lifestyles.",
-      "avatar": "/images/avatar-2.jpg"
+     "avatar": "/icon/icon2.png"
     },
     "heroImage": "/images/hero-2.png",
     "body": [
@@ -76,7 +76,7 @@
     "author": {
       "name": "Daniel Brooks",
       "bio": "Strength and Conditioning Specialist helping beginners build confidence in the gym.",
-      "avatar": "/images/avatar-3.jpg"
+     "avatar": "/icon/icon3.png"
     },
     "heroImage": "/images/hero-3.png",
     "body": [
@@ -109,7 +109,7 @@
     "author": {
       "name": "Emily Turner",
       "bio": "Sports Recovery Specialist passionate about injury prevention and performance optimization.",
-      "avatar": "/images/avatar-4.jpg"
+    "avatar": "/icon/icon4.png"
     },
     "heroImage": "/images/hero-4.png",
     "body": [

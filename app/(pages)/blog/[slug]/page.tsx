@@ -1,9 +1,8 @@
 import { Metadata } from "next";
-import React from "react";
 import data from "@/app/data/data.json";
 import { notFound } from "next/navigation";
-import { Header } from "@/app/components/Hero";
-import { BannerSection } from "@/app/components/Banner";
+import { Header } from "@/app/components/Header";
+import { BannerImage } from "@/app/components/BannerImage";
 import { BlogContent } from "@/app/components/BlogContent";
 import { BlogPostInterface } from "@/app/interface";
 
@@ -50,10 +49,9 @@ export default async function BlogPost({
     <div>
       <Header
         title={post?.title}
-        breadcrumbs={["Home", "Articles", post?.title]}
       />
-      <BannerSection imageSrc={post?.heroImage} />\
-      <BlogContent data={post?.body} />
+      <BannerImage imageSrc={post?.heroImage} />\
+      <BlogContent blogData={post} />
     </div>
   );
 }

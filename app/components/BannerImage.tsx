@@ -1,18 +1,14 @@
 import React from "react";
 
-export const BannerSection = ({
+export const BannerImage = ({
   imageSrc = "/hero.png",
 }: {
   imageSrc?: string;
 }) => {
   return (
-    <section
+    <section className="banner-section-image"
       style={{
         backgroundImage: `url(${imageSrc})`,
-        backgroundSize: "cover",
-        height: "400px",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
       }}
     />
   );

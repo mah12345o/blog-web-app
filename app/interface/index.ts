@@ -1,3 +1,4 @@
+
 export interface ParagraphBlock {
   type: "paragraph";
   content: string;
@@ -13,7 +14,18 @@ export type BlogBlock = ParagraphBlock | QuoteBlock;
 export interface BlogPostInterface {
   slug: string;
   title: string;
+  author: { name: string; avatar: string };
   date: string;
   heroImage: string;
   body: BlogBlock[];
+}
+
+export interface CommentInterface {
+  id: number;
+  name: string;
+  email: string;
+  comment: string;
+  rating: number;
+  avatar: string;
+  date: string;
 }
