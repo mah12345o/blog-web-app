@@ -1,0 +1,134 @@
+[
+  {
+    "slug": "full-body-workout-guide",
+    "title": "The Ultimate Guide to Full Body Workouts",
+    "date": "2022-07-22",
+    "author": {
+      "name": "Alex Carter",
+      "bio": "Certified Personal Trainer and Nutritionist with over 10 years of experience helping clients achieve their fitness goals.",
+      "avatar": "/images/avatar.jpg"
+    },
+    "heroImage": "/images/hero.png",
+    "body": [
+      {
+        "type": "paragraph",
+        "content": "Full body workouts are one of the best ways to build muscle and burn fat efficiently. Whether you are a beginner or a pro, targeting all major muscle groups in a single session saves time and boosts your metabolism."
+      },
+      {
+        "type": "heading",
+        "content": "Why Choose Full Body Workouts?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Unlike split routines where you focus on specific muscle groups each day, full body workouts allow you to hit every muscle 2-3 times a week. This frequency is key for maximum hypertrophy and strength gains."
+      },
+      {
+        "type": "heading",
+        "content": "Key Components"
+      },
+      {
+        "type": "paragraph",
+        "content": "A good full body routine should include compound movements like squats, deadlifts, bench presses, and rows. These exercises engage multiple muscles at once, giving you the most bang for your buck."
+      }
+    ]
+  },
+  {
+    "slug": "morning-workout-benefits",
+    "title": "7 Benefits of Morning Workouts You Should Know",
+    "date": "2022-08-05",
+    "author": {
+      "name": "Sarah Mitchell",
+      "bio": "Fitness Coach and Wellness Writer focused on sustainable and healthy lifestyles.",
+      "avatar": "/images/avatar-2.jpg"
+    },
+    "heroImage": "/images/hero-2.png",
+    "body": [
+      {
+        "type": "paragraph",
+        "content": "Starting your day with a workout can set a positive tone for the rest of the day. Morning exercise helps boost energy levels, improve focus, and create a strong routine."
+      },
+      {
+        "type": "heading",
+        "content": "Boosts Metabolism"
+      },
+      {
+        "type": "paragraph",
+        "content": "Exercising in the morning jumpstarts your metabolism, helping you burn more calories throughout the day—even when you're resting."
+      },
+      {
+        "type": "heading",
+        "content": "Improves Consistency"
+      },
+      {
+        "type": "paragraph",
+        "content": "Morning workouts reduce the chances of skipping exercise due to work, social events, or fatigue later in the day."
+      }
+    ]
+  },
+  {
+    "slug": "strength-training-for-beginners",
+    "title": "Strength Training for Beginners: A Simple Start",
+    "date": "2022-08-18",
+    "author": {
+      "name": "Daniel Brooks",
+      "bio": "Strength and Conditioning Specialist helping beginners build confidence in the gym.",
+      "avatar": "/images/avatar-3.jpg"
+    },
+    "heroImage": "/images/hero-3.png",
+    "body": [
+      {
+        "type": "paragraph",
+        "content": "Strength training can feel intimidating at first, but it doesn’t have to be. With the right approach, beginners can safely build muscle and increase strength."
+      },
+      {
+        "type": "heading",
+        "content": "Start With the Basics"
+      },
+      {
+        "type": "paragraph",
+        "content": "Focus on basic movements like squats, push-ups, and rows. Mastering proper form is more important than lifting heavy weights."
+      },
+      {
+        "type": "heading",
+        "content": "Progress Gradually"
+      },
+      {
+        "type": "paragraph",
+        "content": "Increase weight and intensity slowly over time. Consistency and patience are key to long-term progress."
+      }
+    ]
+  },
+  {
+    "slug": "recovery-and-rest-days",
+    "title": "Why Recovery and Rest Days Matter for Fitness",
+    "date": "2022-09-01",
+    "author": {
+      "name": "Emily Turner",
+      "bio": "Sports Recovery Specialist passionate about injury prevention and performance optimization.",
+      "avatar": "/images/avatar-4.jpg"
+    },
+    "heroImage": "/images/hero-4.png",
+    "body": [
+      {
+        "type": "paragraph",
+        "content": "Training hard is important, but recovery is just as critical. Without proper rest, your body cannot repair muscles or improve performance."
+      },
+      {
+        "type": "heading",
+        "content": "The Role of Rest Days"
+      },
+      {
+        "type": "paragraph",
+        "content": "Rest days allow your muscles to rebuild stronger and help prevent overtraining and injuries."
+      },
+      {
+        "type": "heading",
+        "content": "Active Recovery"
+      },
+      {
+        "type": "paragraph",
+        "content": "Light activities like walking, stretching, or yoga can improve circulation and speed up recovery without stressing the body."
+      }
+    ]
+  }
+]
