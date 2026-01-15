@@ -12,7 +12,7 @@ export const BlogContent = ({ blogData }: { blogData: BlogPostInterface }) => {
   const exploreMoreData = data?.filter((post) => post?.slug !== blogData?.slug);
 
   return (
-    <div className="layout_padding">
+    <div style={{marginBottom: "3rem"}} className="layout_padding">
       <div className="content-container">
         <div>
           <BlogHeader

@@ -21,7 +21,7 @@ export const RelatedArticles = () => {
                 style={{ objectFit: "cover" }}
               />
             </div>
-            <div style={{ padding: "1rem" }}>
+            <div style={{paddingTop:"1rem",paddingBottom:"1rem" }}>
               <h3
                 style={{
                   fontSize: "1.125rem",

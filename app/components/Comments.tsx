@@ -133,7 +133,7 @@ export const CommentsSection = () => {
               gap: "1rem",
             }}
           >
-            <div>
+            <div style={{ width: "100%" }}>
               <InputLabel title="Name" />
               <input
                 type="text"
@@ -152,7 +152,7 @@ export const CommentsSection = () => {
                 required
               />
             </div>
-            <div>
+             <div style={{ width: "100%" }}>
               <InputLabel title="Email" />
               <input
                 type="email"
