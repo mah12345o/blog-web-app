@@ -1,5 +1,5 @@
 import data from "@/app/data/data.json";
-import { BlogBlock, BlogPostInterface } from "../interface";
+import { BlogPostInterface } from "../interface";
 import AboutAuthorCarousel from "./AboutAuthorCarousel";
 import { BlogHeader } from "./BlogHeader";
 import { CommentsSection } from "./Comments";
@@ -12,7 +12,7 @@ export const BlogContent = ({ blogData }: { blogData: BlogPostInterface }) => {
   const exploreMoreData = data?.filter((post) => post?.slug !== blogData?.slug);
 
   return (
-    <div style={{marginBottom: "3rem"}} className="layout_padding">
+    <div style={{ marginBottom: "3rem" }} className="layout_padding">
       <div className="content-container">
         <div>
           <BlogHeader
