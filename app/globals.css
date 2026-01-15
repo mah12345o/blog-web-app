@@ -312,6 +312,13 @@
   margin-bottom: 12px;
 }
 
+.explore-more-section {
+  width: 30%;
+}
+
+.content-container > div:first-child {
+  width:70%;
+}
 /* BannerImage Component */
 .banner-image-bg {
   background-size: cover;
@@ -431,7 +438,7 @@
 }
 
 /* ExploreMoreCard Component */
-.explore-card-wrapper {
+.explore-more-section > div {
   margin-bottom: 15px;
 }
 

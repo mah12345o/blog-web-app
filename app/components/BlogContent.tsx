@@ -50,7 +50,7 @@ export const BlogContent = ({ blogData }: { blogData: BlogPostInterface }) => {
           <AboutAuthorCarousel />
           <CommentsSection />
         </div>
-        <div>
+        <div className="explore-more-section">
           <Heading title="Explore more" />
           {exploreMoreData?.map((el) => (
             <ExploreMoreCard

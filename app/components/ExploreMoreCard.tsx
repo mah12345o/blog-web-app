@@ -16,7 +16,7 @@ export const ExploreMoreCard = ({
   image: string;
 }) => {
   return (
-   <div className="explore-card-wrapper">
+   <div>
      <Link href={`/blog/${slug}`}>
       <div className="explore-card-content">
         <div className="explore-card-image-container">
