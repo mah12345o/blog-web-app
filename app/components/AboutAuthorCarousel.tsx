@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { NavBtn } from "./NavBtn";
 
-export default function AboutAuthorCarousel() {
+export const AboutAuthorCarousel = () => {
   const [index, setIndex] = useState(0);
   const author = authors[index];
 
@@ -23,7 +23,7 @@ export default function AboutAuthorCarousel() {
       style={{ borderColor: "#E5E6EA", paddingTop: "2.5rem" }}
     >
       {/* Author Info */}
-      <div className="text-center">
+      <div style={{ textAlign: "center" }}>
         <h2 style={{ fontSize: "1.25rem", fontWeight: 400, color: "#10152E" }}>
           About {author?.name}
         </h2>

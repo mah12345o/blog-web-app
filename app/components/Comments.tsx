@@ -124,7 +124,7 @@ export const CommentsSection = () => {
       </div>
 
       <form onSubmit={handleAddComment}>
-        <div className="comment_inputs">
+        <div className="comment-inputs">
           <div
             style={{
               display: "flex",
@@ -218,7 +218,7 @@ export const CommentsSection = () => {
                 onClick={() => setEmojiRating(1)}
               >
                 <BsEmojiFrown />
-                {emojiRating == 1 ? " Very bad" : ""}
+                {emojiRating == 1 ? "Very bad" : ""}
               </button>
               <button
                 type="button"

@@ -14,42 +14,42 @@ export const CommentList = ({ comments }: CommentListProps) => {
     <>
       {comments.map((el) => (
         <div key={el.id} className="comment">
-          <div className="comment__content">
-            <div className="comment__avatar">
+          <div className="comment-content">
+            <div className="comment-avatar">
               <Image
                 src="/icon/icon2.png"
                 alt={el.name}
                 fill
-                className="comment__avatar-img"
+                className="comment-avatar-img"
               />
             </div>
 
-            <div className="comment__body">
-              <div className="comment__header">
-                <div className="comment__name-rating">
-                  <p className="comment__name">{el.name}</p>
+            <div className="comment-body">
+              <div className="comment-header">
+                <div className="comment-name-rating">
+                  <p className="comment-name">{el.name}</p>
 
-                  <div className="comment__rating">
+                  <div className="comment-rating">
                     {Array.from({ length: 5 }).map((_, i) => (
                       <FaStar
                         key={i}
                         className={
                           i < el.rating
-                            ? "comment__star comment__star--active"
-                            : "comment__star"
+                            ? "comment-star comment-star--active"
+                            : "comment-star"
                         }
                       />
                     ))}
-                    <span className="comment__rating-value">
+                    <span className="comment-rating-value">
                       ({el.rating.toFixed(1)})
                     </span>
                   </div>
                 </div>
 
-                <p className="comment__date">{el.date}</p>
+                <p className="comment-date">{el.date}</p>
               </div>
 
-              <p className="comment__text">{el.comment}</p>
+              <p className="comment-text">{el.comment}</p>
             </div>
           </div>
         </div>

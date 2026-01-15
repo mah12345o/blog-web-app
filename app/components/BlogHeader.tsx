@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-type Props = {
+interface Props  {
   author: string;
   avatar: string;
   date: string;
@@ -8,9 +8,24 @@ type Props = {
 
 export const BlogHeader = ({ author, avatar, date }: Props) => {
   return (
-    <div className="flex items-center justify-between border-b border-gray-200 pb-3 mb-6">
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+        borderBottom: "1px solid #e5e7eb",
+        paddingBottom: "12px",
+        marginBottom: "24px",
+      }}
+    >
       {/* Author */}
-      <div className="flex items-center gap-2">
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "8px",
+        }}
+      >
         <div
           style={{
             position: "relative",
@@ -22,13 +37,27 @@ export const BlogHeader = ({ author, avatar, date }: Props) => {
         >
           <Image src={avatar} alt={author} fill />
         </div>
-        <span className="text-xs font-semibold tracking-widest uppercase text-gray-900">
+        <span
+          style={{
+            fontSize: "12px",
+            fontWeight: 600,
+            letterSpacing: "0.1em",
+            textTransform: "uppercase",
+            color: "#111827",
+          }}
+        >
           {author}
         </span>
       </div>
-
       {/* Date */}
-      <span className="text-xs tracking-widest uppercase text-gray-500">
+      <span
+        style={{
+          fontSize: "12px",
+          letterSpacing: "0.1em",
+          textTransform: "uppercase",
+          color: "#6b7280",
+        }}
+      >
         {date}
       </span>
     </div>
