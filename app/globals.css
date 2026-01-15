@@ -219,9 +219,23 @@
 
 .related-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 1.5rem;
-  margin: 0 30px;
+  margin: 0 10px;
+}
+
+@media (min-width: 640px) {
+  .related-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .related-grid {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 30px;
+  }
 }
 
 .article-card-image {
@@ -317,7 +331,7 @@
 }
 
 .content-container > div:first-child {
-  width:70%;
+  width: 70%;
 }
 /* BannerImage Component */
 .banner-image-bg {
@@ -689,6 +703,17 @@
 
 .lg-hidden {
   display: block;
+}
+
+/* Mobile/Tablet Margin */
+.mobile-tablet-margin {
+  margin: 0px 20px;
+}
+
+@media (min-width: 1024px) {
+  .mobile-tablet-margin {
+    margin: 0;
+  }
 }
 
 /* Responsive */

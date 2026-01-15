@@ -52,7 +52,7 @@ export default async function BlogPost({
   if (!post) return notFound();
 
   return (
-    <div>
+    <div className="mobile-tablet-margin">
       <Header
         title={post?.title}
       />
