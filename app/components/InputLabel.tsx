@@ -1,5 +1,4 @@
 import React from "react";
-import { twMerge } from "tailwind-merge";
 
 interface HeadingProps {
   title: string;
@@ -8,15 +7,16 @@ interface HeadingProps {
 
 export const InputLabel = ({ title, className }: HeadingProps) => {
   return (
-    <div>
-      <h2
-        className={twMerge(
-          "text-lg text-[#3E3232] font-medium mb-3",
-          className
-        )}
-      >
-        {title}
-      </h2>
-    </div>
+    <h2
+      style={{
+        fontSize: "18px",
+        color: "#3E3232",
+        fontWeight: 500,
+        marginBottom: "12px",
+      }}
+      className={className}
+    >
+      {title}
+    </h2>
   );
 };

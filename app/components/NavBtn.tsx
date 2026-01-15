@@ -4,33 +4,46 @@ import { IoArrowForwardCircleOutline } from "react-icons/io5";
 
 interface NavBtnProps {
   onClick?: React.MouseEventHandler<HTMLDivElement>;
-  href: string;
   title: string;
   isPrevBtn?: boolean;
 }
 
 export const NavBtn: React.FC<NavBtnProps> = ({
   onClick,
-  href,
   title,
   isPrevBtn,
 }) => {
   return (
     <div
-      className="flex flex-col items-start gap-2 cursor-pointer"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "flex-start",
+        gap: "8px",
+        cursor: "pointer",
+      }}
       onClick={onClick}
     >
-      <p className="text-sm flex items-center gap-2 border rounded-[2px] border-[#05091C] text-[#05091C] px-4 py-2">
-        {isPrevBtn && <IoArrowForwardCircleOutline className="rotate-180" />}
+      <p
+        style={{
+          fontSize: "14px",
+          display: "flex",
+          alignItems: "center",
+          gap: "8px",
+          border: "1px solid #05091C",
+          borderRadius: "2px",
+          color: "#05091C",
+          padding: "8px 16px",
+        }}
+      >
+        {isPrevBtn && (
+          <IoArrowForwardCircleOutline
+            style={{ transform: "rotate(180deg)" }}
+          />
+        )}
         {title}
         {!isPrevBtn && <IoArrowForwardCircleOutline />}
       </p>
-      <Link
-        href={href}
-        className="text-[#262D4D] font-normal text-sm hover:underline"
-      >
-        {title}
-      </Link>
     </div>
   );
 };

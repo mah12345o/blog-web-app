@@ -60,7 +60,8 @@ export const AboutAuthorCarousel = () => {
         <p
           style={{
             fontStyle: "italic",
-            color: "#4B5563",fontWeight:"600",
+            color: "#4B5563",
+            fontWeight: "600",
             maxWidth: "48rem",
             marginLeft: "auto",
             marginRight: "auto",
@@ -82,15 +83,9 @@ export const AboutAuthorCarousel = () => {
           borderTop: "1px solid #E5E6EA",
         }}
       >
-        <NavBtn
-          onClick={handlePrev}
-          title="Previous"
-          isPrevBtn
-          href={author?.prev?.href}
-        />
-
-        <NavBtn onClick={handleNext} title="Next" href={author?.next?.href} />
+        <NavBtn onClick={handlePrev} title="Previous" isPrevBtn />
+        <NavBtn onClick={handleNext} title="Next" />
       </div>
     </div>
   );
-}
+};
