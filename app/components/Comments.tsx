@@ -72,102 +72,44 @@ export const CommentsSection = () => {
   };
 
   return (
-    <div
-      style={{
-        width: "100%",
-        marginLeft: "auto",
-        marginRight: "auto",
-        paddingTop: "3rem",
-        paddingBottom: "3rem",
-      }}
-    >
-      <div style={{ display: "flex", alignItems: "center" }}>
-        <div
-          style={{
-            marginRight: "6px",
-            marginBottom: "28px",
-            height: "10px",
-            width: "4px",
-            backgroundColor: "#000000",
-            borderRadius: "102px",
-          }}
-        />
+    <div className="comments-section">
+      <div className="comment-delimiter">
+        <div className="comment-delimiter-line" />
         <Heading title="Comments" />
       </div>
       {isPending && (
-        <p
-          style={{
-            fontSize: "0.875rem",
-            color: "#3B82F6",
-            marginBottom: "1rem",
-            animation: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-          }}
-        >
+        <p className="comment-pending-message">
           Updating comments...
         </p>
       )}
 
       <CommentList comments={comments} />
 
-      <div style={{ display: "flex", alignItems: "center" }}>
-        <div
-          style={{
-            marginRight: "6px",
-            marginBottom: "28px",
-            height: "10px",
-            width: "4px",
-            backgroundColor: "#000000",
-            borderRadius: "102px",
-          }}
-        />
+      <div className="comment-delimiter">
+        <div className="comment-delimiter-line" />
         <Heading title="Add A Comment" />
       </div>
 
       <form onSubmit={handleAddComment}>
         <div className="comment-inputs">
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-between",
-              gap: "1rem",
-            }}
-          >
-            <div style={{ width: "100%" }}>
+          <div className="comment-form-section">
+            <div className="comment-input-full-width">
               <InputLabel title="Name" />
               <input
                 type="text"
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
-                style={{
-                  width: "100%",
-                  border: "none",
-                  paddingLeft: "1rem",
-                  paddingRight: "1rem",
-                  paddingTop: "0.5rem",
-                  paddingBottom: "0.5rem",
-                  borderRadius: "0.375rem",
-                  backgroundColor: "#F9FAFB",
-                }}
+                className="comment-input-field"
                 required
               />
             </div>
-             <div style={{ width: "100%" }}>
+             <div className="comment-input-full-width">
               <InputLabel title="Email" />
               <input
                 type="email"
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
-                style={{
-                  width: "100%",
-                  border: "none",
-                  paddingLeft: "1rem",
-                  paddingRight: "1rem",
-                  paddingTop: "0.5rem",
-                  paddingBottom: "0.5rem",
-                  borderRadius: "0.375rem",
-                  backgroundColor: "#F9FAFB",
-                }}
+                className="comment-input-field"
               />
             </div>
           </div>
@@ -177,17 +119,7 @@ export const CommentsSection = () => {
               placeholder="Search Anything..."
               value={form.comment}
               onChange={(e) => setForm({ ...form, comment: e.target.value })}
-              style={{
-                width: "100%",
-                height: "78%",
-                border: "none",
-                paddingLeft: "1rem",
-                paddingRight: "1rem",
-                paddingTop: "0.5rem",
-                paddingBottom: "0.5rem",
-                borderRadius: "0.375rem",
-                backgroundColor: "#F9FAFB",
-              }}
+              className="comment-textarea-field"
               required
             />
           </div>
@@ -196,22 +128,10 @@ export const CommentsSection = () => {
         {/* Emoji Rating */}
         <div className="rating-btn-submit-btn-grp">
           <div className="rating-btns">
-            <p
-              style={{
-                fontSize: "0.875rem",
-                fontWeight: 500,
-              }}
-            >
+            <p className="comment-rating-label">
               Rate The Usefulness Of The Article
             </p>
-            <div
-              style={{
-                display: "flex",
-                fontSize: "0.875rem",
-                alignItems: "center",
-                gap: "1rem",
-              }}
-            >
+            <div className="comment-rating-container">
               <button
                 type="button"
                 className={emojiRating === 1 ? "active-btn" : "inactive-btn"}

@@ -8,13 +8,7 @@ interface HeadingProps {
 export const InputLabel = ({ title, className }: HeadingProps) => {
   return (
     <h2
-      style={{
-        fontSize: "18px",
-        color: "#3E3232",
-        fontWeight: 500,
-        marginBottom: "12px",
-      }}
-      className={className}
+      className={`input-label ${className || ""}`}
     >
       {title}
     </h2>

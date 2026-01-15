@@ -8,56 +8,18 @@ interface Props  {
 
 export const BlogHeader = ({ author, avatar, date }: Props) => {
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        borderBottom: "1px solid #e5e7eb",
-        paddingBottom: "12px",
-        marginBottom: "24px",
-      }}
-    >
+    <div className="blog-header">
       {/* Author */}
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: "8px",
-        }}
-      >
-        <div
-          style={{
-            position: "relative",
-            borderRadius: "100%",
-            overflow: "hidden",
-            width: "24px",
-            height: "24px",
-          }}
-        >
+      <div className="blog-header-author-section">
+        <div className="blog-header-avatar">
           <Image src={avatar} alt={author} fill />
         </div>
-        <span
-          style={{
-            fontSize: "12px",
-            fontWeight: 600,
-            letterSpacing: "0.1em",
-            textTransform: "uppercase",
-            color: "#111827",
-          }}
-        >
+        <span className="blog-header-author-name">
           {author}
         </span>
       </div>
       {/* Date */}
-      <span
-        style={{
-          fontSize: "12px",
-          letterSpacing: "0.1em",
-          textTransform: "uppercase",
-          color: "#6b7280",
-        }}
-      >
+      <span className="blog-header-date">
         {date}
       </span>
     </div>

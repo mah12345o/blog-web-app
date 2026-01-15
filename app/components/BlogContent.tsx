@@ -13,7 +13,7 @@ export const BlogContent = ({ blogData }: { blogData: BlogPostInterface }) => {
   const exploreMoreData = data?.filter((post) => post?.slug !== blogData?.slug);
 
   return (
-    <div style={{ marginBottom: "3rem" }} className="layout_padding">
+    <div className="blog-content-container layout_padding">
       <div className="content-container">
         <div>
           <BlogHeader
@@ -21,29 +21,14 @@ export const BlogContent = ({ blogData }: { blogData: BlogPostInterface }) => {
             avatar={blogData?.author?.avatar}
             date={blogData?.date}
           />
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "1.5rem",
-              fontSize: "16px",
-              lineHeight: "1.625",
-              color: "#10152E",
-            }}
-          >
+          <div className="blog-body">
             {blogData?.body?.map((block, index) => {
               switch (block?.type) {
                 case "quote":
                   return (
                     <div
                       key={index}
-                      style={{
-                        borderLeft: "4px solid #d1d5db",
-                        paddingLeft: "16px",
-                        fontStyle: "italic",
-                        color: "#1f2937",
-                        maxWidth: "768px",
-                      }}
+                      className="blog-quote"
                     >
                       {block?.content}
                     </div>
@@ -54,9 +39,7 @@ export const BlogContent = ({ blogData }: { blogData: BlogPostInterface }) => {
                   return (
                     <p
                       key={index}
-                      style={{
-                        maxWidth: "768px", // max-w-3xl
-                      }}
+                      className="blog-paragraph"
                     >
                       {block?.content}
                     </p>
@@ -79,7 +62,7 @@ export const BlogContent = ({ blogData }: { blogData: BlogPostInterface }) => {
               key={el?.title}
             />
           ))}
-          <div style={{ marginTop: "2rem" }}>
+          <div className="blog-explore-margin">
             <Heading title="Tour Guides" />
             <TourGuides />
           </div>

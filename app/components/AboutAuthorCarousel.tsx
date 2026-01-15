@@ -18,71 +18,30 @@ export const AboutAuthorCarousel = () => {
   };
 
   return (
-    <div
-      className="custom-div"
-      style={{ borderColor: "#E5E6EA", paddingTop: "2.5rem" }}
-    >
+    <div className="author-carousel-wrapper">
       {/* Author Info */}
-      <div style={{ textAlign: "center" }}>
-        <h2 style={{ fontSize: "1.25rem", fontWeight: 400, color: "#10152E" }}>
+      <div className="author-info-section">
+        <h2 className="author-name-heading">
           About {author?.name}
         </h2>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            marginTop: "1.75rem",
-            marginBottom: "1.75rem",
-          }}
-        >
-          <div
-            style={{
-              position: "relative",
-              width: "6.25rem",
-              height: "6.25rem",
-            }}
-          >
+        <div className="author-image-container">
+          <div className="author-avatar-wrapper">
             <Image
               src={author?.image}
               alt={author?.name}
               fill
-              style={{
-                borderRadius: "9999px",
-                objectFit: "cover",
-                marginLeft: "auto",
-                marginRight: "auto",
-                marginBottom: "1rem",
-              }}
+              className="author-avatar-img"
             />
           </div>
         </div>
 
-        <p
-          style={{
-            fontStyle: "italic",
-            color: "#4B5563",
-            fontWeight: "600",
-            maxWidth: "48rem",
-            marginLeft: "auto",
-            marginRight: "auto",
-          }}
-        >
+        <p className="author-bio">
           {author?.bio}
         </p>
       </div>
 
       {/* Previous/Next Blog Nav */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          borderColor: "#E5E6EA",
-          marginTop: "2.5rem",
-          paddingTop: "1.5rem",
-          borderTop: "1px solid #E5E6EA",
-        }}
-      >
+      <div className="author-nav-section">
         <NavBtn onClick={handlePrev} title="Previous" isPrevBtn />
         <NavBtn onClick={handleNext} title="Next" />
       </div>

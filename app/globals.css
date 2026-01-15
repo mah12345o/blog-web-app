@@ -100,10 +100,6 @@
   gap: 16px;
 }
 
-.comment-inputs div {
-  width: 50%;
-}
-
 .rating-btn-submit-btn-grp {
   display: flex;
   flex-direction: row;
@@ -232,6 +228,453 @@
   width: 100%;
   height: 10rem;
 }
+
+/* Header Component */
+.header-section {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.header-breadcrumb {
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.header-breadcrumb-bold {
+  color: #262d4d;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.header-breadcrumb-regular {
+  color: #262d4d;
+  font-weight: 400;
+}
+
+.header-title {
+  font-size: 1.875rem;
+  color: #10152e;
+  font-weight: 600;
+}
+
+/* BlogHeader Component */
+.blog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+}
+
+.blog-header-author-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.blog-header-avatar {
+  position: relative;
+  border-radius: 100%;
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+}
+
+.blog-header-author-name {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #111827;
+}
+
+.blog-header-date {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+/* Heading Component */
+.heading-title {
+  margin-bottom: 1.8rem;
+  color: #10152e;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* InputLabel Component */
+.input-label {
+  font-size: 18px;
+  color: #3e3232;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+/* BannerImage Component */
+.banner-image-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Comments Component */
+.comments-section {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.comment-delimiter {
+  display: flex;
+  align-items: center;
+}
+
+.comment-delimiter-line {
+  margin-right: 6px;
+  margin-bottom: 28px;
+  height: 10px;
+  width: 4px;
+  background-color: #000000;
+  border-radius: 102px;
+}
+
+.comment-pending-message {
+  font-size: 0.875rem;
+  color: #3b82f6;
+  margin-bottom: 1rem;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.comment-form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 50%;
+}
+
+.comment-input-full-width {
+  width: 100%;
+}
+
+.comment-textarea-stye {
+  width: 50%;
+}
+
+.comment-input-field {
+  width: 100%;
+  border: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.375rem;
+  background-color: #f9fafb;
+}
+
+.comment-textarea-field {
+  width: 100%;
+  height: 78%;
+  border: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.375rem;
+  background-color: #f9fafb;
+}
+
+.comment-rating-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.comment-rating-container {
+  display: flex;
+  font-size: 0.875rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* BlogContent Component */
+.blog-content-container {
+  margin-bottom: 3rem;
+}
+
+.blog-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #10152e;
+}
+
+.blog-quote {
+  border-left: 4px solid #d1d5db;
+  padding-left: 16px;
+  font-style: italic;
+  color: #1f2937;
+  max-width: 768px;
+}
+
+.blog-paragraph {
+  max-width: 768px;
+}
+
+.blog-explore-margin {
+  margin-top: 2rem;
+}
+
+/* ExploreMoreCard Component */
+.explore-card-wrapper {
+  margin-bottom: 15px;
+}
+
+.explore-card-content {
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.explore-card-image-container {
+  position: relative;
+  width: 100%;
+}
+
+.explore-card-info {
+  padding-bottom: 1.75rem;
+  padding-top: 1.25rem;
+}
+
+.explore-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.explore-card-author {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: black;
+}
+
+.explore-card-date {
+  color: #757575;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.explore-card-title {
+  font-size: 1rem;
+  color: #121212;
+  font-weight: 400;
+  line-height: 1.375;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* RelatedArticles Component */
+.related-card-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 14rem;
+}
+
+.related-card-info {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.related-card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 0.25rem;
+}
+
+.related-card-description {
+  color: #4b5563;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.related-card-author {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* TourGuides Component */
+.tour-guides-container {
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.tour-guides-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tour-guide-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tour-guide-avatar {
+  height: 40px;
+  width: 40px;
+  position: relative;
+}
+
+.tour-guide-avatar-img {
+  border-radius: 9999px;
+  object-fit: cover;
+}
+
+.tour-guide-name {
+  font-weight: 400;
+  font-size: 1rem;
+  color: black;
+}
+
+.tour-guide-location-section {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.tour-guide-location-text {
+  max-width: 180px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+
+.tour-guide-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.tour-guide-star-active {
+  color: #fbbf24;
+}
+
+.tour-guide-star-inactive {
+  color: #d1d5db;
+}
+
+.tour-guide-rating-value {
+  color: #374151;
+  margin-left: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.tour-guide-divider {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 1px;
+  border: none;
+  background-color: #dedede;
+}
+
+/* AboutAuthorCarousel Component */
+.author-carousel-wrapper {
+  border-color: #e5e6ea;
+  padding-top: 2.5rem;
+}
+
+.author-info-section {
+  text-align: center;
+}
+
+.author-name-heading {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #10152e;
+}
+
+.author-image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.author-avatar-wrapper {
+  position: relative;
+  width: 6.25rem;
+  height: 6.25rem;
+}
+
+.author-avatar-img {
+  border-radius: 9999px;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.author-bio {
+  font-style: italic;
+  color: #4b5563;
+  font-weight: 600;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.author-nav-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-color: #e5e6ea;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e6ea;
+}
+
+/* NavBtn Component */
+.nav-btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.nav-btn-text {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #05091c;
+  border-radius: 2px;
+  color: #05091c;
+  padding: 8px 16px;
+}
+
+.nav-btn-icon-rotated {
+  transform: rotate(180deg);
+}
+
 /* Responsive */
 @media (max-width: 640px) {
   .comment-header {

@@ -8,73 +8,26 @@ import { guidesData } from "../const";
 
 export default function TourGuides() {
   return (
-    <div
-      style={{
-        maxWidth: "28rem",
-        marginLeft: "auto",
-        marginRight: "auto",
-        paddingTop: "1.5rem",
-        paddingBottom: "1.5rem",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "1.5rem",
-        }}
-      >
+    <div className="tour-guides-container">
+      <div className="tour-guides-list">
         {guidesData?.map((guide) => (
           <div key={guide?.id}>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "1rem",
-              }}
-            >
-              <div
-                style={{
-                  height: "40px",
-                  width: "40px",
-                  position: "relative",
-                }}
-              >
+            <div className="tour-guide-card">
+              <div className="tour-guide-avatar">
                 <Image
                   src={guide?.image}
                   alt={guide?.name}
                   fill
-                  style={{
-                    borderRadius: "9999px",
-                    objectFit: "cover",
-                  }}
+                  className="tour-guide-avatar-img"
                 />
               </div>
               <div>
-                <p
-                  style={{ fontWeight: 400, fontSize: "1rem", color: "black" }}
-                >
+                <p className="tour-guide-name">
                   {guide?.name}
                 </p>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    fontWeight: 400,
-                    color: "#6B7280",
-                    fontSize: "0.875rem",
-                  }}
-                >
+                <div className="tour-guide-location-section">
                   <MdLocationOn style={{ marginRight: "0.25rem" }} />
-                  <span
-                    style={{
-                      maxWidth: "180px",
-                      overflow: "hidden",
-                      whiteSpace: "nowrap",
-                      textOverflow: "ellipsis",
-                      display: "inline-block",
-                    }}
-                  >
+                  <span className="tour-guide-location-text">
                     {guide?.location}
                   </span>
                 </div>
@@ -82,43 +35,23 @@ export default function TourGuides() {
             </div>
 
             {/* Stars */}
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "0.25rem",
-                marginTop: "0.5rem",
-              }}
-            >
+            <div className="tour-guide-rating">
               {Array.from({ length: 5 }).map((_, index) => (
                 <FaStar
                   key={index}
-                  style={{
-                    color:
-                      index < Math.round(guide.rating) ? "#FBBF24" : "#D1D5DB",
-                  }}
+                  className={
+                    index < Math.round(guide.rating)
+                      ? "tour-guide-star-active"
+                      : "tour-guide-star-inactive"
+                  }
                 />
               ))}
-              <span
-                style={{
-                  color: "#374151",
-                  marginLeft: "0.25rem",
-                  fontSize: "0.875rem",
-                }}
-              >
+              <span className="tour-guide-rating-value">
                 ({guide.rating.toFixed(1)})
               </span>
             </div>
 
-            <hr
-              style={{
-                marginTop: "1rem",
-                marginBottom: "1rem",
-                height: "1px",
-                border: "none",
-                backgroundColor: "#DEDEDE",
-              }}
-            />
+            <hr className="tour-guide-divider" />
           </div>
         ))}
       </div>

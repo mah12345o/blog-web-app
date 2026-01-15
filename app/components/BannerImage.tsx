@@ -6,7 +6,8 @@ export const BannerImage = ({
   imageSrc?: string;
 }) => {
   return (
-    <section className="banner-section-image"
+    <section
+      className="banner-section-image banner-image-bg"
       style={{
         backgroundImage: `url(${imageSrc})`,
       }}

@@ -14,32 +14,10 @@ export const NavBtn: React.FC<NavBtnProps> = ({
   isPrevBtn,
 }) => {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "flex-start",
-        gap: "8px",
-        cursor: "pointer",
-      }}
-      onClick={onClick}
-    >
-      <p
-        style={{
-          fontSize: "14px",
-          display: "flex",
-          alignItems: "center",
-          gap: "8px",
-          border: "1px solid #05091C",
-          borderRadius: "2px",
-          color: "#05091C",
-          padding: "8px 16px",
-        }}
-      >
+    <div className="nav-btn-wrapper" onClick={onClick}>
+      <p className="nav-btn-text">
         {isPrevBtn && (
-          <IoArrowForwardCircleOutline
-            style={{ transform: "rotate(180deg)" }}
-          />
+          <IoArrowForwardCircleOutline className="nav-btn-icon-rotated" />
         )}
         {title}
         {!isPrevBtn && <IoArrowForwardCircleOutline />}
