@@ -682,11 +682,30 @@
   transform: rotate(180deg);
 }
 
+/* Responsive Layout Classes */
+.lg-block {
+  display: none;
+}
+
+.lg-hidden {
+  display: block;
+}
+
 /* Responsive */
 @media (max-width: 640px) {
   .comment-header {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg-block {
+    display: block;
+  }
+
+  .lg-hidden {
+    display: none;
   }
 }
 

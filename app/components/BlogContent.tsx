@@ -41,7 +41,7 @@ export const BlogContent = ({ blogData }: { blogData: BlogPostInterface }) => {
               }
             })}
           </div>
-          <div className="lg-block" style={{ display: "block" }}>
+          <div className="lg-block">
               <AboutAuthorCarousel />
             </div>
         </div>
@@ -63,7 +63,7 @@ export const BlogContent = ({ blogData }: { blogData: BlogPostInterface }) => {
           </div>
         </div>
       </div>
-       <div style={{ display: "none" }} className="lg-hidden">
+       <div className="lg-hidden">
           <AboutAuthorCarousel />
         </div>
       <CommentsSection />
