@@ -42,7 +42,7 @@ export function generateStaticParams() {
 export default async function BlogPost({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug?: string }>;
 }) {
   const { slug } = await params;
   const posts = data as BlogPostInterface[];
