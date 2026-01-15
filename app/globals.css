@@ -235,7 +235,7 @@
 .submit-btn {
   background-color: black;
   color: white;
-  width: 40%;
+  width: 20%;
   height: fit-content;
   display: flex;
   justify-content: center;
@@ -891,4 +891,25 @@
     width: 1200px;
     margin: auto;
   }
+}
+
+/* =====================
+   AUTHOR INTRO
+   ===================== */
+
+.blog-author-intro {
+  background-color: #f9fafb;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.blog-author-intro p {
+  font-style: italic;
+  font-weight: 600;
+  color: #374151;
+  font-size: 1rem;
+  line-height: 1.6;
 }

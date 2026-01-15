@@ -9,7 +9,13 @@ export interface QuoteBlock {
   content: string;
 }
 
-export type BlogBlock = ParagraphBlock | QuoteBlock;
+
+export interface AuthorIntroBlock {
+  type: "author_intro";
+  content: string;
+}
+
+export type BlogBlock = ParagraphBlock | QuoteBlock | AuthorIntroBlock;
 
 export interface BlogPostInterface {
   slug: string;

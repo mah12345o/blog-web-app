@@ -9,6 +9,7 @@ import { RelatedArticles } from "./RelatedArticles";
 import TourGuides from "./TourGuides";
 import { AboutAuthorCarousel } from "./AboutAuthorCarousel";
 import { ExploreCardSlider } from "./ExploreCardSlider";
+import { AuthorIntro } from "./AuthorIntro";
 
 export const BlogContent = ({ blogData }: { blogData: BlogPostInterface }) => {
   const exploreMoreData = data?.filter((post) => post?.slug !== blogData?.slug);
@@ -31,6 +32,9 @@ export const BlogContent = ({ blogData }: { blogData: BlogPostInterface }) => {
                       {block?.content}
                     </div>
                   );
+
+                case "author_intro":
+                  return <AuthorIntro key={index} content={block?.content} />;
 
                 case "paragraph":
                 default:
