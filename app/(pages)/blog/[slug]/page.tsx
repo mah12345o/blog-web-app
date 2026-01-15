@@ -56,7 +56,7 @@ export default async function BlogPost({
       <Header
         title={post?.title}
       />
-      <BannerImage imageSrc={post?.heroImage} />\
+      <BannerImage imageSrc={post?.heroImage} /> 
       <BlogContent blogData={post} />
     </div>
   );

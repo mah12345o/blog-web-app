@@ -15,8 +15,7 @@ import { InputLabel } from "./InputLabel";
 import { CommentInterface } from "../interface";
 // dynamic import
 const CommentList = dynamic(
-  () =>
-    import("../components/CommentList").then((mod) => mod.CommentList),
+  () => import("../components/CommentList").then((mod) => mod.CommentList),
   {
     ssr: false,
     loading: () => <p>Loading comments...</p>,
@@ -78,9 +77,7 @@ export const CommentsSection = () => {
         <Heading title="Comments" />
       </div>
       {isPending && (
-        <p className="comment-pending-message">
-          Updating comments...
-        </p>
+        <p className="comment-pending-message">Updating comments...</p>
       )}
 
       <CommentList comments={comments} />
@@ -103,7 +100,7 @@ export const CommentsSection = () => {
                 required
               />
             </div>
-             <div className="comment-input-full-width">
+            <div className="comment-input-full-width">
               <InputLabel title="Email" />
               <input
                 type="email"
@@ -184,10 +181,10 @@ export const CommentsSection = () => {
           </div>
 
           <button type="submit" disabled={isPending} className="submit-btn">
-            <BsChatDots className="size-4" /> Send
+            <BsChatDots className="size-4" /> Send Comments
           </button>
         </div>
       </form>
     </div>
   );
-}
+};

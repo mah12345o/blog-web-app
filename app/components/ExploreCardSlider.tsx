@@ -1,14 +1,12 @@
 "use client";
 
-
 import { useState } from "react";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
 import { ExploreMoreCard } from "./ExploreMoreCard";
 import { authors } from "../const";
 import data from "@/app/data/data.json";
 
-
-export const ExploreCardSlider=() =>{
+export const ExploreCardSlider = () => {
   const [index, setIndex] = useState(0);
 
   const el = data[index];
@@ -22,13 +20,7 @@ export const ExploreCardSlider=() =>{
   };
 
   return (
-    <div
-      style={{
-        borderTop: "1px solid #E5E6EA",
-        paddingTop: "2.5rem",
-        marginTop: "2.5rem",
-      }}
-    >
+    <div>
       <ExploreMoreCard
         image={el?.heroImage}
         authorName={el?.author?.name}
@@ -43,8 +35,7 @@ export const ExploreCardSlider=() =>{
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          borderTop: "1px solid #E5E6EA",
-          marginTop: "2.5rem",
+          marginTop: "1.5rem",
           paddingTop: "1.5rem",
         }}
       >
@@ -108,4 +99,4 @@ export const ExploreCardSlider=() =>{
       </div>
     </div>
   );
-}
+};

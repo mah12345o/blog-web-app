@@ -48,19 +48,25 @@ export const BlogContent = ({ blogData }: { blogData: BlogPostInterface }) => {
         </div>
         <div className="explore-more-section">
           <Heading title="Explore more" />
-          <div className="explore-section-desktop">
+          <div
+          
+            className="explore-section-desktop"
+          >
             {exploreMoreData?.map((el) => (
-            <ExploreMoreCard
-              image={el?.heroImage}
-              authorName={el?.author?.name}
-              content={el?.title}
-              date={el?.date}
-              slug={el?.slug}
-              key={el?.title}
-            />
-          ))}
+              <ExploreMoreCard
+                image={el?.heroImage}
+                authorName={el?.author?.name}
+                content={el?.title}
+                date={el?.date}
+                slug={el?.slug}
+                key={el?.title}
+              />
+            ))}
           </div>
-          <div className="explore-slider-mobile" style={{ marginTop: "2.25rem" }}>
+          <div
+            className="explore-slider-mobile"
+            style={{ marginTop: "2.25rem" }}
+          >
             <ExploreCardSlider />
           </div>
           <div className="blog-explore-margin">
