@@ -1,4 +1,4 @@
-import Link from "next/link";
+
 import React from "react";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
 
@@ -8,11 +8,11 @@ interface NavBtnProps {
   isPrevBtn?: boolean;
 }
 
-export const NavBtn: React.FC<NavBtnProps> = ({
+export const NavBtn= ({
   onClick,
   title,
   isPrevBtn,
-}) => {
+}:NavBtnProps ) => {
   return (
     <div className="nav-btn-wrapper" onClick={onClick}>
       <p className="nav-btn-text">
