@@ -26,10 +26,7 @@ export const BlogContent = ({ blogData }: { blogData: BlogPostInterface }) => {
               switch (block?.type) {
                 case "quote":
                   return (
-                    <div
-                      key={index}
-                      className="blog-quote"
-                    >
+                    <div key={index} className="blog-quote">
                       {block?.content}
                     </div>
                   );
@@ -37,18 +34,16 @@ export const BlogContent = ({ blogData }: { blogData: BlogPostInterface }) => {
                 case "paragraph":
                 default:
                   return (
-                    <p
-                      key={index}
-                      className="blog-paragraph"
-                    >
+                    <p key={index} className="blog-paragraph">
                       {block?.content}
                     </p>
                   );
               }
             })}
           </div>
-          <AboutAuthorCarousel />
-          <CommentsSection />
+          <div className="lg-block" style={{ display: "block" }}>
+              <AboutAuthorCarousel />
+            </div>
         </div>
         <div className="explore-more-section">
           <Heading title="Explore more" />
@@ -68,6 +63,10 @@ export const BlogContent = ({ blogData }: { blogData: BlogPostInterface }) => {
           </div>
         </div>
       </div>
+       <div style={{ display: "none" }} className="lg-hidden">
+          <AboutAuthorCarousel />
+        </div>
+      <CommentsSection />
       <RelatedArticles />
     </div>
   );

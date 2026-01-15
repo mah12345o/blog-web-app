@@ -18,7 +18,7 @@
         "type": "heading",
         "content": "Why Choose Full Body Workouts?"
       },
-       {
+      {
         "type": "",
         "content": "Why Choose Full Body Workouts?"
       },
@@ -43,7 +43,7 @@
     "author": {
       "name": "Sarah Mitchell",
       "bio": "Fitness Coach and Wellness Writer focused on sustainable and healthy lifestyles.",
-     "avatar": "/icon/icon2.png"
+      "avatar": "/icon/icon2.png"
     },
     "heroImage": "/images/hero-2.png",
     "body": [
@@ -76,7 +76,7 @@
     "author": {
       "name": "Daniel Brooks",
       "bio": "Strength and Conditioning Specialist helping beginners build confidence in the gym.",
-     "avatar": "/icon/icon3.png"
+      "avatar": "/icon/icon3.png"
     },
     "heroImage": "/images/hero-3.png",
     "body": [
@@ -109,13 +109,13 @@
     "author": {
       "name": "Emily Turner",
       "bio": "Sports Recovery Specialist passionate about injury prevention and performance optimization.",
-    "avatar": "/icon/icon4.png"
+      "avatar": "/icon/icon4.png"
     },
     "heroImage": "/images/hero-4.png",
     "body": [
       {
         "type": "paragraph",
-        "content": "Training hard is important, but recovery is just as critical. Without proper rest, your body cannot repair muscles or improve performance."
+        "content": "Training hard is important, but recovery is just as critical. Without proper rest, your body cannot repair muscles or improve performance. Continuous strain without recovery often leads to fatigue, plateaus, and increased risk of injury."
       },
       {
         "type": "heading",
@@ -123,7 +123,11 @@
       },
       {
         "type": "paragraph",
-        "content": "Rest days allow your muscles to rebuild stronger and help prevent overtraining and injuries."
+        "content": "Rest days give your muscles time to repair and rebuild after intense workouts. During this process, muscle fibers grow stronger, helping you improve performance and avoid burnout."
+      },
+      {
+        "type": "paragraph",
+        "content": "Taking regular rest days also supports your nervous system, allowing your body to recover mentally as well as physically. This balance is essential for long-term consistency in training."
       },
       {
         "type": "heading",
@@ -131,7 +135,23 @@
       },
       {
         "type": "paragraph",
-        "content": "Light activities like walking, stretching, or yoga can improve circulation and speed up recovery without stressing the body."
+        "content": "Active recovery involves low-intensity movements that keep your body moving without placing stress on your muscles. Activities like walking, stretching, swimming, or light yoga Active recovery involves low-intensity movements that keep your body moving without placing stress on your muscles. Activities like walking, stretching, swimming, or light yoga Active recovery involves low-intensity movements that keep your body moving without placing stress on your muscles. Activities like walking, stretching, swimming, or light yoga Active recovery involves low-intensity movements that keep your body moving without placing stress on your muscles. Activities like walking, stretching, swimming, or light yoga Active recovery involves low-intensity movements that keep your body moving without placing stress on your muscles. Activities like walking, stretching, swimming, or light yoga Active recovery involves low-intensity movements that keep your body moving without placing stress on your muscles. Activities like walking, stretching, swimming, or light yoga improve blood flow and reduce muscle stiffness."
+      },
+      {
+        "type": "paragraph",
+        "content": "Unlike complete rest, active recovery helps flush out metabolic waste from muscles, speeding up the recovery process while keeping you engaged in healthy movement."
+      },
+      {
+        "type": "heading",
+        "content": "Listening to Your Body"
+      },
+      {
+        "type": "paragraph",
+        "content": "Understanding your body’s signals is crucial for effective recovery. Persistent soreness, lack of motivation, or poor sleep are signs that you may need additional rest or lighter training sessions."
+      },
+      {
+        "type": "paragraph",
+        "content": "Adjusting your routine based on how you feel helps prevent overtraining and ensures sustainable progress over time."
       }
     ]
   }
