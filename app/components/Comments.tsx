@@ -181,7 +181,7 @@ export const CommentsSection = () => {
           </div>
 
           <button type="submit" disabled={isPending} className="submit-btn">
-            <BsChatDots className="size-4" /> Send Comments
+            <BsChatDots className="size-4" /> Send
           </button>
         </div>
       </form>

@@ -19,10 +19,6 @@
         "content": "Why Choose Full Body Workouts?"
       },
       {
-        "type": "",
-        "content": "Why Choose Full Body Workouts?"
-      },
-      {
         "type": "paragraph",
         "content": "Unlike split routines where you focus on specific muscle groups each day, full body workouts allow you to hit every muscle 2-3 times a week. This frequency is key for maximum hypertrophy and strength gains."
       },
@@ -33,6 +29,26 @@
       {
         "type": "paragraph",
         "content": "A good full body routine should include compound movements like squats, deadlifts, bench presses, and rows. These exercises engage multiple muscles at once, giving you the most bang for your buck."
+      },
+      {
+        "type": "paragraph",
+        "content": "Incorporating both pushing and pulling movements ensures balanced development and reduces the risk of injury. Aim for 3-4 exercises per session, focusing on proper form over heavy weight."
+      },
+      {
+        "type": "heading",
+        "content": "Sample Full Body Workout"
+      },
+      {
+        "type": "paragraph",
+        "content": "Start with a 5-minute warm-up, then perform: Squats (4x5), Bench Press (4x5), Rows (4x5), and Overhead Press (3x8). Finish with light stretching. This balanced routine hits all major muscle groups effectively."
+      },
+      {
+        "type": "heading",
+        "content": "Recovery Tips"
+      },
+      {
+        "type": "paragraph",
+        "content": "Rest 2-3 days between sessions to allow muscles to recover. Proper nutrition and sleep are equally important as training itself. Stay hydrated and consume adequate protein for muscle repair."
       }
     ]
   },
@@ -60,12 +76,44 @@
         "content": "Exercising in the morning jumpstarts your metabolism, helping you burn more calories throughout the day—even when you're resting."
       },
       {
+        "type": "paragraph",
+        "content": "This phenomenon, known as the afterburn effect or EPOC (Excess Post-Exercise Oxygen Consumption), means your body continues burning calories long after your workout ends."
+      },
+      {
         "type": "heading",
         "content": "Improves Consistency"
       },
       {
         "type": "paragraph",
         "content": "Morning workouts reduce the chances of skipping exercise due to work, social events, or fatigue later in the day."
+      },
+      {
+        "type": "paragraph",
+        "content": "By establishing a morning routine, you create accountability and make fitness a non-negotiable part of your day, leading to better results over time."
+      },
+      {
+        "type": "heading",
+        "content": "Enhanced Mental Clarity"
+      },
+      {
+        "type": "paragraph",
+        "content": "Morning exercise increases blood flow to the brain, improving cognitive function and concentration throughout the day. Many professionals report better productivity and decision-making after morning workouts."
+      },
+      {
+        "type": "heading",
+        "content": "Better Sleep Quality"
+      },
+      {
+        "type": "paragraph",
+        "content": "Exercising early helps regulate your circadian rhythm, leading to improved sleep quality at night. This creates a positive cycle: better sleep leads to better workouts."
+      },
+      {
+        "type": "heading",
+        "content": "Getting Started"
+      },
+      {
+        "type": "paragraph",
+        "content": "Start with just 20-30 minutes of light exercise. Even a brisk walk or short yoga session can provide significant benefits. The key is consistency—make it a habit before increasing intensity."
       }
     ]
   },
@@ -93,12 +141,44 @@
         "content": "Focus on basic movements like squats, push-ups, and rows. Mastering proper form is more important than lifting heavy weights."
       },
       {
+        "type": "paragraph",
+        "content": "Good form prevents injuries and ensures you're actually working the muscles you intend to target. Consider hiring a trainer for even just one session to learn proper technique."
+      },
+      {
+        "type": "heading",
+        "content": "Essential Equipment for Beginners"
+      },
+      {
+        "type": "paragraph",
+        "content": "You don't need much to start strength training. A pair of dumbbells, resistance bands, and your bodyweight are enough. As you progress, you can add more equipment to your home gym."
+      },
+      {
         "type": "heading",
         "content": "Progress Gradually"
       },
       {
         "type": "paragraph",
         "content": "Increase weight and intensity slowly over time. Consistency and patience are key to long-term progress."
+      },
+      {
+        "type": "paragraph",
+        "content": "A good rule is the 10% rule: increase weight by no more than 10% each week. This prevents plateaus while reducing injury risk."
+      },
+      {
+        "type": "heading",
+        "content": "Beginner Strength Program"
+      },
+      {
+        "type": "paragraph",
+        "content": "Train 3 days per week with a full body approach. Each session should include 3-4 compound exercises with 3 sets of 8-12 reps. Rest 60-90 seconds between sets."
+      },
+      {
+        "type": "heading",
+        "content": "Nutrition and Recovery"
+      },
+      {
+        "type": "paragraph",
+        "content": "Eat enough protein (0.8-1g per pound of bodyweight) and get 7-9 hours of sleep. These factors are as important as your actual training sessions for building strength."
       }
     ]
   },
