@@ -85,7 +85,7 @@ export const CommentsSection = () => {
         <div
           style={{
             marginRight: "6px",
-            marginBottom: "2px",
+            marginBottom: "28px",
             height: "10px",
             width: "4px",
             backgroundColor: "#000000",
@@ -113,7 +113,7 @@ export const CommentsSection = () => {
         <div
           style={{
             marginRight: "6px",
-            marginBottom: "2px",
+            marginBottom: "28px",
             height: "10px",
             width: "4px",
             backgroundColor: "#000000",
@@ -124,7 +124,7 @@ export const CommentsSection = () => {
       </div>
 
       <form onSubmit={handleAddComment}>
-        <div className="comment-inputs">
+        <div className="comment_inputs">
           <div
             style={{
               display: "flex",

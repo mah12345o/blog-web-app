@@ -7,8 +7,8 @@ import { relatedArticles } from "../const";
 export const RelatedArticles = () => {
   return (
     <div className="layout_padding">
-      <h2 className="">Related articles Related articles</h2>
-      <div className="grid grid-cols-4">
+      <h2 className="related-title">Related articles Related articles</h2>
+      <div className="related-grid">
         {relatedArticles?.map((item) => (
           <div key={item?.id} className="card">
             <div
