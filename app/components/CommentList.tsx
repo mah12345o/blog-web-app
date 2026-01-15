@@ -12,13 +12,13 @@ interface CommentListProps {
 export const CommentList = ({ comments }: CommentListProps) => {
   return (
     <>
-      {comments.map((el) => (
-        <div key={el.id} className="comment">
+      {comments?.map((el) => (
+        <div key={el?.id} className="comment">
           <div className="comment-content">
             <div className="comment-avatar">
               <Image
                 src="/icon/icon2.png"
-                alt={el.name}
+                alt={el?.name}
                 fill
                 className="comment-avatar-img"
               />

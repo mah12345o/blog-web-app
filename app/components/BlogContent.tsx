@@ -8,6 +8,7 @@ import { Heading } from "./Heading";
 import { RelatedArticles } from "./RelatedArticles";
 import TourGuides from "./TourGuides";
 import { AboutAuthorCarousel } from "./AboutAuthorCarousel";
+import { ExploreCardSlider } from "./ExploreCardSlider";
 
 export const BlogContent = ({ blogData }: { blogData: BlogPostInterface }) => {
   const exploreMoreData = data?.filter((post) => post?.slug !== blogData?.slug);
@@ -42,12 +43,13 @@ export const BlogContent = ({ blogData }: { blogData: BlogPostInterface }) => {
             })}
           </div>
           <div className="lg-block">
-              <AboutAuthorCarousel />
-            </div>
+            <AboutAuthorCarousel />
+          </div>
         </div>
         <div className="explore-more-section">
           <Heading title="Explore more" />
-          {exploreMoreData?.map((el) => (
+          <div className="explore-section-desktop">
+            {exploreMoreData?.map((el) => (
             <ExploreMoreCard
               image={el?.heroImage}
               authorName={el?.author?.name}
@@ -57,15 +59,19 @@ export const BlogContent = ({ blogData }: { blogData: BlogPostInterface }) => {
               key={el?.title}
             />
           ))}
+          </div>
+          <div className="explore-slider-mobile" style={{ marginTop: "2.25rem" }}>
+            <ExploreCardSlider />
+          </div>
           <div className="blog-explore-margin">
             <Heading title="Tour Guides" />
             <TourGuides />
           </div>
         </div>
       </div>
-       <div className="lg-hidden">
-          <AboutAuthorCarousel />
-        </div>
+      <div className="lg-hidden">
+        <AboutAuthorCarousel />
+      </div>
       <CommentsSection />
       <RelatedArticles />
     </div>

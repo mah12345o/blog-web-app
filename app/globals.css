@@ -19,19 +19,19 @@
   gap: 2rem;
 }
 
-.content-container > div:first-child {
-  width: 70%;
-}
 
-.explore-more-section {
-  width: 30%;
-}
+
+
 
 /* =====================
    RESPONSIVE LAYOUT
    ===================== */
 
 .lg-block {
+  display: none;
+}
+
+.explore-slider-mobile {
   display: none;
 }
 
@@ -169,6 +169,10 @@
   padding-bottom: 0.5rem;
   border-radius: 0.375rem;
   background-color: #f9fafb;
+}
+
+.explore-section-desktop{
+  display: block;
 }
 
 .comment-delimiter {
@@ -753,14 +757,49 @@
 }
 
 /* =====================
-   RESPONSIVE DESIGN
+   NEXT FILL IMAGE
    ===================== */
 
+.next-fill-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.next-fill-image {
+  object-fit: cover;
+}
+
+ .explore-more-section {
+  width: 30%;
+}
+/* =====================
+   RESPONSIVE DESIGN
+   ===================== */
+.content-container > div:first-child {
+  width: 70%;
+}
 @media (max-width: 640px) {
   .comment-header {
     flex-direction: column;
     align-items: flex-start;
   }
+  .explore-slider-mobile {
+    display: block;
+  }
+
+.explore-section-desktop{
+  display: none;
+}
+  .content-container {
+    flex-direction: column;
+  }
+
+  .explore-more-section {
+  width: 100%;
+}
+.content-container > div:first-child {
+  width: 100%;
+}
 }
 
 @media (min-width: 640px) {
@@ -781,6 +820,16 @@
 
   .mobile-tablet-margin {
     margin: 0;
+  }
+
+ 
+
+  .content-container > div:first-child {
+    width: 70%;
+  }
+
+  .explore-more-section {
+    width: 30%;
   }
 
   .related-grid {

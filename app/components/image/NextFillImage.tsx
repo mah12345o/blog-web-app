@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { twMerge } from "tailwind-merge";
 
 // Define the prop types for better TypeScript support
 interface NextFillImageProps {
@@ -22,13 +21,13 @@ export const NextFillImage = ({
   children,
 }: NextFillImageProps) => {
   return (
-    <div className={twMerge("relative overflow-hidden", className)}>
+    <div className={`next-fill-image-wrapper ${className}`}>
       <Image
         src={src}
         alt={alt}
         fill
         priority={priority}
-        className={twMerge("object-cover", imageClassName)}
+        className={`next-fill-image ${imageClassName}`}
         quality={quality}
       />
       {children}
