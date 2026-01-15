@@ -16,7 +16,7 @@ export const ExploreMoreCard = ({
   image: string;
 }) => {
   return (
-   <div  style={{marginBottom:"15px"}}>
+   <div style={{marginBottom:"15px"}}>
      <Link href={`/blog/${slug}`}>
       <div style={{ backgroundColor: "#FFFFFF", overflow: "hidden" }}>
         <div style={{ position: "relative", width: "100%" }}>
