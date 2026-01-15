@@ -1,7 +1,5 @@
-import BlogPost from "./(pages)/blog/[slug]/page";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return (
-    <BlogPost/>
-  );
+  redirect("/blog/full-body-workout-guide");
 }
